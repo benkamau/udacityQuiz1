@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start_screenActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:src="@drawable/download"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        />
+    <TextView
+        android:id="@+id/text_quiz"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:text="Welcome To the Udacity Test"
+
+        />
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:text="Start"
+        android:background="@color/start"
+        />
+
+</LinearLayout>

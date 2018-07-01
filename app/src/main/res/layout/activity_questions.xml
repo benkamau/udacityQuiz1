@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questions"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer the following questions correctly"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorAccent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/layer1">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Q1: What are the tracks offered by Udacity?"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox1"
+            android:layout_marginLeft="20dp"
+            android:text="Android Basics"
+            android:textSize="15dp"
+
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox2"
+            android:layout_marginLeft="20dp"
+            android:text="Android Developer"
+            android:textSize="15dp"
+
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox3"
+            android:layout_marginLeft="20dp"
+            android:text="Mobile Web Specialist"
+            android:textSize="15dp"
+
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox4"
+            android:layout_marginLeft="20dp"
+            android:text="Computer Science"
+            android:textSize="15dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/layer2">
+        <TextView
+            android:id="@+id/Question_text"
+            android:text="Q2: What is the difference between margin and padding in android layout?"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice1"
+                android:text="Margin is specifying the extra space left on all four sides in layout"
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice2"
+                android:text="Padding is used to offset the content of a view by specific px or dp"
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice3"
+                android:text="Both Choice 1 and 2 are correct"
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice4"
+                android:text="None of the above"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/layer3">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Q3: What is IDE in full ? "
+            android:id="@+id/question_3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice5"
+                android:text="Independent Development Environment."
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice6"
+                android:text="Integrated Design Environment."
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice7"
+                android:text="Integrated Development Environment."
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice8"
+                android:text="None of the above."
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/layer4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Q4: What is JDK in full?"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <RadioGroup
+            android:id="@+id/radio_group3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice9"
+                android:text="Java Design Kit"
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice10"
+                android:text="Java Development Kit."
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice11"
+                android:text="Just Don't Know."
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice12"
+                android:text="all the above."
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/layer5">
+        <TextView
+            android:text="Q5: What are the minimum requirement to run Android Studio ?"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox5"
+            android:layout_marginLeft="20dp"
+            android:text="Android SDK"
+            android:textSize="15dp"
+
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox6"
+            android:layout_marginLeft="20dp"
+            android:text="IDE"
+            android:textSize="15dp"
+
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox7"
+            android:layout_marginLeft="20dp"
+            android:text="C++"
+            android:textSize="15dp"
+
+            />
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/checkbox8"
+            android:layout_marginLeft="20dp"
+            android:text="JDK"
+            android:textSize="15dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/last">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you willing to Study Android Development with Udacity?"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <RadioGroup
+            android:id="@+id/radio_group5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice13"
+                android:text="Yes."
+                />
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/choice14"
+                android:text="No."
+                />
+
+        </RadioGroup>
+        <TextView
+            android:text="If  Yes fill in your details below "
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:id="@+id/plan_text_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:hint="Your First Name"
+            />
+    <EditText
+        android:id="@+id/plan_name_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:hint="Your Last Name"
+        />
+        <EditText
+            android:id="@+id/plan_email_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            />
+        <EditText
+            android:id="@+id/plan_country_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:hint="Your Country"
+            />
+    </LinearLayout>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submit"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="End Quiz"
+            android:id="@+id/end"/>
+
+</LinearLayout>
+
+    </ScrollView>
+
